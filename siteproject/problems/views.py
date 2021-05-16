@@ -5,6 +5,7 @@ from django.shortcuts import render, redirect
 from .forms import AddProjectForm
 from .models import *
 projects = Projects.objects.all()
+i = 0
 p = Projects.objects.get(id = 1)
 menu = ["Главная", "Проекты", "Информация", "Проблемы", "ДОБАВИТЬ ПРОБЛЕМУ", "ДОБАВИТЬ ПРОЕКТ", "Авторизация"]
 def index(request):
@@ -12,6 +13,9 @@ def index(request):
 
 def main(request):
     return  render(request,'problems/base.html', {'menu': menu, 'title': 'Проектная площадка ММФ НГУ'})
+
+def project(request):
+    return render(request, 'problems/project.html', {'menu': menu, 'title': p.title, 'field': p, "i": i})
 
 def addpage(request):
     if request.method == 'POST':
