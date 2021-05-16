@@ -1,0 +1,13 @@
+{% extends 'problems/base.html' %}
+
+{% block content %}
+<h1>{{title}}</h1>
+    {% for p in projects %}
+    <div>
+        <h2>{{p.title}}</h2>
+        <p>{{p.shortdescription}}</p>
+        <p>Руководитель: {{p.project.get}}</p>
+        <p>Куратор: {{p.curator}}</p>
+    </div>
+    {% endfor %}
+{% endblock %}
