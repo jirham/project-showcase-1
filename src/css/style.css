@@ -1,0 +1,79 @@
+* {
+    font-family: Acrom, sans-serif;
+    box-sizing: border-box;
+}
+header {
+    top: 0;
+    left: 0;
+    margin: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    position: fixed;
+    display: block;
+    width: 100%;
+    height: 80px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+.under-header {
+    margin-top: 80px;
+}
+header .add-buttons {
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: bold;
+    margin-right: 60px;
+    text-align: right;
+}
+header .trans {
+    font-size: 16px;
+    font-weight: normal;
+    text-align: center;
+}
+header .trans a {
+    margin-right: 50px;
+}
+header #current {
+    color: #54b686;
+}
+header .add-buttons a {
+    margin-right: 30px;
+}
+#login-avatar {
+    width: 20px;
+    height: auto;
+}
+#mmd-logo-green {
+    display: inline-block;
+}
+.main-page-title {
+    text-transform: uppercase;
+    background-color: #54b686;
+    height: 240px;
+    color: white;
+}
+.main-page-title title {
+    display: inline-block;
+}
+.main-page-title #mmd-logo-green {
+    display: inline-block;
+    margin-left: 10%;
+}
+.main-page-title .title h1 {
+    font-size: 50px;
+}
+.main-page-title .title h3 {
+    font-size: 15px;
+}
+.bbutton {
+    display: inline-block;
+    width: 33%;
+    height: 800px;
+    background-color: white;
+}
+.bbutton h2 {
+    text-align: center;
+    margin-top: 100px;
+    font-size: 60px;
+    color: black;
+}
